@@ -1,0 +1,34 @@
+//colour
+$first: white;
+$second: black;
+$third: #f4131d;
+$fourth: #282a30;
+$fifth: #e4e4e4;
+
+//font
+$first-font: 'Montserrat', sans-serif;
+
+//navbar
+$navbar-link-color: $second;
+
+$navbar-font-family: $first-font;
+$navbar-font-weight: 500;
+$navbar-font-size: 18px;
+
+//baner
+$banner-bg-color: $fourth;
+$banner-font-color: $first;
+$banner-border-color: $third;
+
+$banner-font-size: 50px;
+
+//footer
+$footer-bg-color: $fourth;
+$footer-font-color: $first;
+
+//social
+$social-bg-color: $first;
+$social-font-color: $fourth;
+
+$social-bg-color-activ: $third;
+$social-font-color-activ: $first;

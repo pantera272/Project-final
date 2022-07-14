@@ -1,0 +1,31 @@
+@import './../../../styles/settings.scss';
+
+.container {
+  width: 100%;
+  background-color: yellow;
+  background-image: url('../../../../public/img/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height:700px;
+  position: relative;
+
+  div {
+    background-color: $banner-bg-color;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    color: $banner-font-color;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 100px 30px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 100px 30px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 100px 30px rgba(255, 255, 255, 1);
+    
+    h1 {
+      font-size: $banner-font-size;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}

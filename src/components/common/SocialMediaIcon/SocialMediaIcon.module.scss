@@ -1,0 +1,24 @@
+@import './../../../styles/settings.scss';
+
+.container {
+  width: 60px;
+  height: 60px;
+  background-color: $social-bg-color;
+  color: $social-font-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.container:hover {
+  background-color: $social-bg-color-activ;
+  color: $social-font-color-activ;
+}
+
+.linkname {
+  font-size: 0px;
+}

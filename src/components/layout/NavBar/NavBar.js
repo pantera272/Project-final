@@ -12,7 +12,8 @@ const NavBar = () => {
       <div>
         <ul className={styles.menu}>
           <li><a href='/home'>Home</a></li>
-          <li><a href='/contact'>Contact</a></li>
+          <li><a href='/contact'>Kontakt</a></li>
+          <li><a href='/configurator'>Konfigurator</a></li>
           <li>
             <a href='/cardshopping'><FontAwesomeIcon icon={faBasketShopping} /></a>
           </li>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './SocialMediaIcon.module.scss';
+import PropTypes from 'prop-types';
 
 const SocialMediaIcon = ({ link, children }) => {
   return (
@@ -10,4 +11,10 @@ const SocialMediaIcon = ({ link, children }) => {
   )
 }
 
+SocialMediaIcon.propTypes = {
+  link: PropTypes.string,
+  children: PropTypes.node,
+}
+
 export default SocialMediaIcon;
+

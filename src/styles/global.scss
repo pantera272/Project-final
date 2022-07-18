@@ -13,3 +13,18 @@ body, html {
 a {
   text-decoration: none;
 }
+
+.header {
+  color: $home-header-font-color;
+  font-size: $home-header-font-size;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $home-sub-header-font-color;
+    font-size: $home-sub-header-font-size;
+    margin-top: 10px;
+  }
+}

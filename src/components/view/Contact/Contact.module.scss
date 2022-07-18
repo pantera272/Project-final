@@ -1,0 +1,25 @@
+@import './../../../styles/settings.scss';
+
+.container {
+  background-color: $home-bg-header-color;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  .contactdata {
+    text-align: center;
+    width: 400px;
+  }
+
+  .contactform {
+    text-align: left;
+    width: 400px;
+  }
+}

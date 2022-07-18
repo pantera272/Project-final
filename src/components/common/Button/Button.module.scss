@@ -1,0 +1,17 @@
+@import './../../../styles/settings.scss';
+
+.button {
+  border-radius: 5px;
+  border: 2px solid $button-border-color;
+  color: $button-font-color;
+  background-color: $button-bg-color;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: $button-bg-color-aktive;
+  color: $button-font-color-aktive;
+}

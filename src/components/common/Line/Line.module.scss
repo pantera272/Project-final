@@ -1,0 +1,13 @@
+@import './../../../styles/settings.scss';
+
+.line {
+  text-align: left;
+  background-color: $configurator-line-bg-color;
+  padding: 10px;
+  color: $configurator-line-text-color;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1000px;
+}

@@ -2,25 +2,25 @@ const initialState = {
   foils: {
     data: [
       {
-        id: 1,
+        id: '1',
         name: 'Dąb',
         picture: 'dab.jpg',
         describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
       },
       {
-        id: 2,
+        id: '2',
         name: 'Biała sosna',
         picture: 'bialasosna.jpg',
         describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
       },
       {
-        id: 3,
+        id: '3',
         name: 'Buk',
         picture: 'buk.jpg',
         describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
       },
       {
-        id: 4,
+        id: '4',
         name: 'Jesion',
         picture: 'jesion.jpg',
         describe: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
@@ -29,8 +29,9 @@ const initialState = {
     loading: {
       error: false,
     }
-  }
-
+  },
+  
+  orders:[]
 }
 
 export default initialState;

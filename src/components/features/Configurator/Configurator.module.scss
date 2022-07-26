@@ -1,0 +1,48 @@
+@import './../../../styles/settings.scss';
+
+.button {
+  border-radius: 5px;
+  border: 2px solid $configurator-button-color;
+  color: $configurator-button-text-color;
+  background-color: $configurator-button-color;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 30px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: $configurator-button-color-aktiv;
+  border: 2px solid $configurator-button-color-aktiv;
+}
+
+.activ {
+  background-color: $configurator-button-color-aktiv;
+  border: 2px solid $configurator-button-color-aktiv;
+}
+
+.twoboxcontainer {
+  width: 1000px;
+  margin: 30px auto;
+  display: flex;
+
+  .container {
+    width: 400px;
+    padding: 20px 50px;
+  }
+}
+
+.displaynone {
+  display: none;
+}
+
+.name {
+  width: 500px;
+  margin: 30px auto;
+}
+
+.error {
+  width: 300px;
+  margin: 10px auto 30px auto;  
+}

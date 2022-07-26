@@ -2,7 +2,7 @@
 
 .container {
   height: 300px;
-  width: 200px;
+  width: 300px;
   text-align: left;
   padding: 20px;
   background-color: $home-card-bg-color;
@@ -10,7 +10,7 @@
 
   h2 {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 500;margin-top: 30px;
   }
 
   p {
@@ -26,6 +26,7 @@
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  
   background-color: $home-card-bg-icon-color;
   color: $home-card-font-icon-color;
 }

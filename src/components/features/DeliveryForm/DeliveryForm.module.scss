@@ -1,0 +1,34 @@
+@import './../../../styles/settings.scss';
+
+.form {
+  text-align: left;
+  width: 1000px;
+  margin: 30px auto;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 300px;
+  }
+}
+
+.mail {
+  width: 400px;
+}
+
+.button {
+  border-radius: 5px;
+  border: 2px solid $configurator-button-color;
+  color: $configurator-button-text-color;
+  background-color: $configurator-button-color;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.displaynone {
+  display: none;
+}

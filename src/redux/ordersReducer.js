@@ -1,3 +1,5 @@
+export const getAllOrders = (state) => state.orders;
+
 const createActionName = actionName => `app/orders/${actionName}`;
 
 const ADD_ORDER = createActionName('ADD_ORDER');

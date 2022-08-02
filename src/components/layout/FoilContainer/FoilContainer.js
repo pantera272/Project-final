@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { getAllFoils } from '../../../redux/foilsReducer';
 import PropTypes from 'prop-types';
 
-const FoilContainer = ({activ, close, action}) => {
+const FoilContainer = ({activ, close, action, setprice}) => {
 
   const foils = useSelector(getAllFoils);
 
@@ -30,8 +30,10 @@ const FoilContainer = ({activ, close, action}) => {
             title={foil.name}
             describe={foil.describe}
             id={foil.id}
+            price={foil.price}
             style={styles.button}
             action={action}
+            setprice={setprice}
             close={close}
           />
         )}
@@ -44,6 +46,7 @@ const FoilContainer = ({activ, close, action}) => {
 FoilContainer.propTypes = {
   activ: PropTypes.string,
   close: PropTypes.func,
+  setprice: PropTypes.func,
   action: PropTypes.func
 }
 

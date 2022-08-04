@@ -5,7 +5,7 @@ import styles from './DeliveryForm.module.scss';
 import { useState } from 'react';
 import clsx from 'clsx';
 import { useDispatch } from 'react-redux';
-import { addOrder } from '../../../redux/ordersReducer';
+import { addOrderRequest } from '../../../redux/ordersReducer';
 import { useNavigate } from 'react-router-dom';
 
 const DeliveryForm = () => {
@@ -92,20 +92,20 @@ const DeliveryForm = () => {
     const isError = errors.indexOf(true);
     if (isError === -1){
       const elements = JSON.parse(localStorage.getItem('set'));
+      
       const order = {
-        delivry : {
-          name: name,
-          street: street,
-          city: city,
-          zipCode: zipCode,
-          emai: email,
-          phone: phone
-        },
+        name: name,
+        street: street,
+        city: city,
+        zipCode: zipCode,
+        email: email,
+        phone: phone,
         orderElements: elements.data
       }
-      dispatch(addOrder(order));
+
+      dispatch(addOrderRequest(order));
       localStorage.removeItem('set'); 
-      navigate('/ok');
+      navigate('/order');
     } else {
       console.log('nie wyslij');
     }    

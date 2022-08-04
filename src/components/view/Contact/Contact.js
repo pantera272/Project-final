@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className={styles.container}>
       <Banner />
-      <div class='header'>
+      <div className='header'>
         <h1>Skontaktuj się z nami.</h1>
         <p>Zrealizujemy parapety dla Ciebie.</p>
       </div>

@@ -105,7 +105,7 @@ const Configurator = () => {
 
   const handleSubmit = () => {
     // errors = [windowSill, thicknessSill, shspeSill, long, width]
-    const errors = [true, true];
+    const errors = [true, true, true, true, true, true];
     if (windowSill === ''){
       setWindowSillError(true);
       errors[0] = true;

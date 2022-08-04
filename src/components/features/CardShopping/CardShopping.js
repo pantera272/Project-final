@@ -4,11 +4,17 @@ import { Table, Popover, OverlayTrigger } from 'react-bootstrap';
 import styles from './CardShopping.module.scss';
 import FoilInfo from '../../common/FoilInfo/FoilInfo';
 import { calculatePrice } from '../../../utils/calculatePrice';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const CardShoping = () => {
-  const { data } = JSON.parse(localStorage.getItem('set'));
-  const [orders, setOrders] = useState(data || []);
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('set'));
+    if (data !== null){
+      setOrders(data.data);
+    }
+  }, []);
 
   let sum = 0;  
   

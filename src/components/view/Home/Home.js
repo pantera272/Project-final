@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Banner />
-      <div class='header'>
+      <div className='header'>
         <h1>Parapety zewnętrzne i wewnętrzne</h1>
         <p>Doskonała jakość wykonania, szybki termin realizacji.</p>
       </div>
@@ -26,7 +26,7 @@ const Home = () => {
       </div>
       <div>
         <h2>Nasze realizacje</h2>
-        <div class={styles.imgcontainer}>
+        <div className={styles.imgcontainer}>
           <div>
             <img src='/img/foto1.jpg' alt='Foto 1' />
             <div>

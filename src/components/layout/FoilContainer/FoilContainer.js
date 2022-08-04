@@ -25,7 +25,7 @@ const FoilContainer = ({activ, close, action, setprice}) => {
       <div className={styles.foilcontainer}>
         {foils.map(
           foil => <FoilCard 
-            key={foil.id}
+            key={foil._id}
             img={foil.picture}
             title={foil.name}
             describe={foil.describe}
